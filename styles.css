@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+:root{
+    margin:0 auto;
+    display:flex;
+}
+
+#logo-name{
+    font-family: Norse-Bold, sans-serif;
+}
+
+#left-band-img{
+    margin:0;
+    z-index: -1;
+}
+
+#logo-section{
+    position: absolute;
+}
+
+form{
+    display:flex;
+}

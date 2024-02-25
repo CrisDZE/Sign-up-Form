@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <figure id="left-band-img">
+                <img src="assets/tourism20150818-1-1.jpg"
+                     alt="Different places to visit around the world"
+                     id="background-img">
+                <span id="logo-section">
+                    <img src="assets/airplane-svgrepo-com.svg"
+                        alt="Plane logo"
+                        id="logo-img">
+                    <p id="logo-name">World Flyers!</p>
+                </span>
+            </figure>
+        </section>
+        <article>
+            <form action="#"
+                  method=""
+                  id="form">
+                <legend id="form-legend"><h2>Let's Travel!</h2></legend>
+                <label for="countries">Where?</label>
+                <select id="countries"
+                       name="countries"
+                       required>
+                        <optgroup label="America">
+                            <option value="united-states">United States</option>
+                            <option value="canada">Canada</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="spain">Spain</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                        </optgroup>
+                </select>
+                <label for="date">When?</label>
+                <input type="date"
+                       id="date"
+                       name="date"
+                       required>
+                <label for="price"> Price?</label>
+                <input id="price"
+                       type="number"
+                       name="price"
+                       placeholder="Price in dollars"
+                       required>
+                <label for="vehicle">How?</label>
+                <select id="vehicle"
+                        name="vehicle"
+                        required>
+                    <option value="plane">Plane</option>
+                    <option value="boat">Boat</option>
+                    <option value="train">Train</option>
+                </select>      
+                <label for="username">Who?</label>
+                <input type="text"
+                       id="username"
+                       name="username"
+                       placeholder="Name"
+                       pattern="[A-Za-z]{1-10}"
+                       required>
+                <label for="email">Email</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="aaaaa@aaa.com"
+                       required>
+                <label for="phone-number">Phone number</label>
+                <input type="text"
+                       id="phone-number"
+                       name="phone-number"
+                       pattern="[+ 0-9]{1-16}"
+                       placeholder="+00 000 00 00 00"
+                       required>
+                <button id="submit"type="submit">Submit</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
