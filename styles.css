@@ -2,25 +2,90 @@
     font-family: Norse-Bold;
     src: url(assets/Norse-Bold.otf);
 }
-
-:root{
+:root, body, html{
     margin:0 auto;
-    display:flex;
-}
-
-#logo-name{
     font-family: Norse-Bold, sans-serif;
+    background-color: black;
+    color: white;
 }
-
-#left-band-img{
-    margin:0;
-    z-index: -1;
+h1{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color: grey;
+  margin:0;
+  width:100vw;
+  height:9vh;
+  color:black;
 }
-
-#logo-section{
-    position: absolute;
+a{
+  color:white;
 }
-
-form{
-    display:flex;
+a:hover{
+  color:lightgreen;
+}
+form {
+  max-width: 480px;
+  min-width:259px;
+  display:grid;
+  margin: 10vh 25% 0 25%;
+  border: solid 1px rgb(43, 35, 33 );
+  padding: 20px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-gap:5px;
+  border-radius:15px;
+}
+input {
+  background-color: rgb(43, 35, 33 );
+  color: white;
+  border: none;
+  margin: 0.5vh;
+  border-radius: 15px;
+}
+input:focus{
+  outline:none;
+  background-color: white;
+  color: rgb(43, 35, 33 );
+}
+#form-legend{
+  grid-column:2;
+  grid-row:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 2vh;
+}
+#email{grid-column:2;
+  grid-row:2;}
+#username{grid-column:2;
+  grid-row:3;}
+#birth{grid-column:2;
+  grid-row:4;}
+form label:nth-of-type(1){
+  grid-column:3;
+  grid-row:4;
+}
+#password{grid-column:2;
+  grid-row:5;}
+#password-verification{grid-column:2;
+  grid-row:6;}
+#phone-number{grid-column:2;
+  grid-row:7;}
+#checkbox-grid{grid-column:2;
+  grid-row:8;  display: flex;
+  justify-content: center;
+align-items:center;}
+#submit{border-radius: 15px;grid-column:2;
+  grid-row:9;
+margin-top:1vw;
+  background-color: rgb(43, 35, 33 );
+  color: white;
+border:none}
+#submit:hover{
+  background-color: white;
+  color: rgb(43, 35, 33 );
+}
+#checkbox-grid label{
+  margin-left:4px;
 }
